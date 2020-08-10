@@ -24,6 +24,8 @@ public class Client {
     private String address;
     private String phoneNumber;
     private String username;
+    private String upuser;
+    private String total;
 
     public Long getId() {
         return id;
@@ -71,5 +73,21 @@ public class Client {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getUpuser() {
+        return upuser;
+    }
+
+    public void setUpuser(String upuser) {
+        this.upuser = upuser;
+    }
+
+    public String getTotal() {
+        return total;
+    }
+
+    public void setTotal(String total) {
+        this.total = total;
     }
 }
