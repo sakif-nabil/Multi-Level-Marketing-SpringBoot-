@@ -36,46 +36,46 @@ public class MlmEcomV1Application implements CommandLineRunner {
         categoryRepository.save(new Category(3L,"Smart phones",null,"good Product",null));
         System.out.println("Application working succesfully");
         Random rnd=new Random();
-//        categoryRepository.findAll().forEach(c->{
-//            for (int i=0;i<10 ;i++){
-//               if(c.getId()==1) {
-//                   Product p = new Product();
-////                RandomString.make(3)
-//                   p.setName("Computer " + i);
-//                   p.setCurrentPrice(100 + rnd.nextInt(10000));
-//                   p.setAvailable(rnd.nextBoolean());
-//                   p.setPromotion(rnd.nextBoolean());
-//                   p.setSelected(rnd.nextBoolean());
-//                   p.setCategory(c);
-//                   p.setPhotoName("un.png");
-//
-//                   productRepository.save(p);
-//               }else if (c.getId()==2){
-//                   Product p = new Product();
-////                RandomString.make(3)
-//                   p.setName("Tablet " + i);
-//                   p.setCurrentPrice(100 + rnd.nextInt(10000));
-//                   p.setAvailable(rnd.nextBoolean());
-//                   p.setPromotion(rnd.nextBoolean());
-//                   p.setSelected(rnd.nextBoolean());
-//                   p.setCategory(c);
-//                   p.setPhotoName("une.png");
-//                   productRepository.save(p);
-//               }
-//               else if (c.getId()==3){
-//                   Product p = new Product();
-////                RandomString.make(3)
-//                   p.setName("SmartPhone " + i);
-//                   p.setCurrentPrice(100 + rnd.nextInt(10000));
-//                   p.setAvailable(rnd.nextBoolean());
-//                   p.setPromotion(rnd.nextBoolean());
-//                   p.setSelected(rnd.nextBoolean());
-//                   p.setCategory(c);
-//                   p.setPhotoName("smart.png");
-//                   productRepository.save(p);
-//               }
-//            }
-//        });
+        categoryRepository.findAll().forEach(c->{
+            for (int i=0;i<10 ;i++){
+               if(c.getId()==1) {
+                   Product p = new Product();
+//                RandomString.make(3)
+                   p.setName("Computer " + i);
+                   p.setCurrentPrice(100 + rnd.nextInt(10000));
+                   p.setAvailable(rnd.nextBoolean());
+                   p.setPromotion(rnd.nextBoolean());
+                   p.setSelected(rnd.nextBoolean());
+                   p.setCategory(c);
+                   p.setPhotoName("un.png");
+
+                   productRepository.save(p);
+               }else if (c.getId()==2){
+                   Product p = new Product();
+//                RandomString.make(3)
+                   p.setName("Tablet " + i);
+                   p.setCurrentPrice(100 + rnd.nextInt(10000));
+                   p.setAvailable(rnd.nextBoolean());
+                   p.setPromotion(rnd.nextBoolean());
+                   p.setSelected(rnd.nextBoolean());
+                   p.setCategory(c);
+                   p.setPhotoName("une.png");
+                   productRepository.save(p);
+               }
+               else if (c.getId()==3){
+                   Product p = new Product();
+//                RandomString.make(3)
+                   p.setName("SmartPhone " + i);
+                   p.setCurrentPrice(100 + rnd.nextInt(10000));
+                   p.setAvailable(rnd.nextBoolean());
+                   p.setPromotion(rnd.nextBoolean());
+                   p.setSelected(rnd.nextBoolean());
+                   p.setCategory(c);
+                   p.setPhotoName("smart.png");
+                   productRepository.save(p);
+               }
+            }
+        });
 
 
 
